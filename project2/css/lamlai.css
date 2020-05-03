@@ -1,0 +1,979 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+header{
+	width: 100%;
+	padding: 20px 0px;
+	border-bottom: 1px solid #EAEAEA;
+	background: #fff;
+}
+
+header div.container{
+	max-width: 1140px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	padding: 0 20px;
+}
+
+header div.container div.logo{
+	flex:2;
+	max-width: 570px;
+}
+
+header div.container div.info{
+	flex:2;
+}
+
+header div.container div.info ul{
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+}
+
+header div.container div.info ul li{
+	flex: 1;
+}
+
+header div.container div.info ul li a{
+	text-decoration: none;
+	font-size: 13px;
+	color: #919191;
+}
+
+header div.container div.info ul li a i{
+	color: #FF3414;
+	margin-right: 7px;
+}
+
+header div.container div.info ul li a.quote{
+	font-size: 18px;
+	display: inline-block;
+	padding: 15px 0px;
+	border:1px solid #FF3414;
+	color: #FF3414;
+	width: 187px;
+	text-align: center;
+}
+
+header div.container div.info ul li a.quote:hover{
+	color: #fff;
+	background: #FF3414;
+	transition: 0.7s;
+}
+
+header div.container div.show-menu a{
+	display:none;
+}
+
+
+nav{
+	width: 100%;
+	padding: 20px 0px;
+}
+
+nav div.container{
+	max-width: 1140px;
+	display: flex;
+	margin: auto;
+	align-items: center;
+}
+
+nav div.container div.menu {
+	flex:3;
+}
+
+
+nav div.container div.menu ul.sub{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+}
+
+nav div.container div.menu ul.sub li{
+	display: inline-block;
+	position: relative;
+}
+
+nav div.container div.menu ul.sub li a{
+	text-decoration: none;
+	font-size: 16px;
+	color: #596672;
+	font-weight: 400;
+	display: inline-block;
+	padding: 0px 60px 0px 0px;
+}
+
+nav div.container div.menu ul.sub li a i{
+	font-size: 11px;
+}
+
+nav div.container div.menu ul.sub li a:hover{
+	color: #FF3414;
+	transition: 0.7s;
+}
+
+nav div.container div.menu ul.sub li ul.sub-menu{
+	position: absolute;
+	left: 0px;
+	top: 100%;
+	width: 150px;
+	background: #FFF;
+	text-align: left;
+	z-index: 10;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.7s;
+}
+
+nav div.container div.menu ul.sub li ul.sub-menu li{
+	margin-bottom: 10px;
+	display: block;
+	margin-top: 20px;
+	padding-left: 10px;
+}
+
+nav div.container div.menu ul.sub li:hover ul{
+	opacity: 1;
+	visibility: unset; 
+}
+
+nav div.container div.search a{
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	border-radius: 50%;
+	padding: 8px 10px;
+	background:  #FF3414;
+	margin-right: 60px;
+}
+
+nav div.container div.search a i{
+	font-size: 13px;
+}
+
+section.slide{
+	width: 100%;
+}
+
+section.slide div.container{
+	width: 100%;
+	height: 700px;
+	background: url(../img/banner/banner.png) no-repeat center center;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+
+section.slide div.container:after{
+	content: " ";
+	background: #001D38;
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+}
+
+section.slide div.container div.text{
+	max-width: 700px;
+	text-align: center;
+	position: absolute;
+	z-index: 1;
+	color: #fff;
+
+}
+
+section.slide div.container div.text p{
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+
+section.slide div.container div.text h1{
+	font-size: 55px;
+}
+
+section.slide div.container div.text a{
+	margin-top: 50px;
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	padding: 20px 30px;
+	border:1px solid #FF3414;
+	background: #FF3414;
+}
+
+section.slide div.container div.text a:hover{
+	background: transparent;
+	color: #FF3414;
+	transition: 0.3s;
+}
+
+aside.about{
+	width: 100%;
+	padding: 100px 0px;
+}
+
+aside.about div.container{
+	max-width: 1140px;
+	margin: auto;
+} 
+
+aside.about div.container ul{
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	max-width: 1140px;
+}
+
+aside.about div.container ul li{
+	flex-shrink: 2;
+	flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+aside.about div.container ul li img{
+	margin-bottom: 10px;
+	max-width: 362px;
+}
+
+aside.about div.container ul li:nth-child(2) img{
+	margin-bottom: 21px;
+}
+
+aside.about div.container ul li h2{
+	margin-bottom: 10px;
+	font-weight: 500;
+}
+
+aside.about div.container ul li h2:hover{
+	color: #FF3414;
+	transition: 0.4s;
+}
+
+aside.about div.container ul li p{
+	color: #919191;
+	line-height: 28px;
+	max-width: 260px;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+section.service{
+	background: #F5FBFF;
+	padding: 120px 0 90px;
+	width: 100%;
+	position: relative;
+}
+
+section.service div.container{
+	max-width: 1140px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	
+}
+
+section.service div.container h1{
+	margin-bottom: 50px;
+	font-size: 45px;
+	font-weight: 400;
+	color:  #001D38;
+}
+
+section.service div.container ul{
+	display: flex;
+	list-style-type: none;
+	margin: 0 0px;
+	padding: 0;
+}
+
+section.service div.container ul li{
+	text-align: left;
+	max-width: 350px;
+	margin-right: 40px;
+}
+
+section.service div.container ul li:nth-child(3){
+	margin-right: 0px;
+}
+
+
+section.service div.container ul li div.img{
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+section.service div.container ul li div.img img{
+	max-width: 100%;
+	height:auto;
+	transform: scale(1.1);
+}
+
+section.service div.container ul li div.img:hover img {
+	transform: scale(1);
+	transition: 1s;
+
+}
+
+section.service div.container ul li a{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: block;
+	text-decoration: none;
+	color: #001D38;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+section.service div.container ul li a:hover{
+	text-decoration: underline;
+	color: #FF3414;
+	transition: 0.4s;
+}
+
+section.service div.container ul li p{
+	max-width: 320px;
+	color:  #919191;
+}
+
+section.service a.pre{
+	position: absolute;
+	left: 45px;
+	bottom: 220px;
+	font-size: 20px;
+	z-index: 3;
+}
+
+section.service a.next{
+	position: absolute;
+	right: 45px;
+	bottom: 220px;
+	font-size: 20px;
+}
+
+section.service >a{
+	display: inline-block;
+	padding: 8px 14px;
+	border-radius: 50%;
+	background: #fff;
+	color: #FF3414;
+}
+
+section.service >a:hover{
+	background: #FF3414;
+	color: #fff;
+	transition: 0.5s;
+}
+
+section.banner{
+	width: 100%;
+	height: 400px;
+	background: url(../img/banner/contact_bg.png);
+	position: relative;
+	z-index: 1;
+	box-sizing: border-box;
+	padding: 100px 0px;
+
+}
+
+section.banner:after{
+	content: " ";
+	width: 100%;
+	height: 400px;
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	left: 0;
+	background: #001D38;
+	opacity: 0.7;
+	background-repeat: no-repeat;
+}
+
+section.banner div.container{
+	max-width: 1140px;
+	min-height: 200px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	z-index: 1;
+	margin: auto;
+}
+
+section.banner div.container div.text{
+	flex: 2;
+}
+
+section.banner div.container div.text h3{
+	color: #fff;
+	font-size: 50px;
+	font-weight: 400;
+
+}
+
+section.banner div.container div.text p{
+	color: #EAEAEA;
+	margin-top: 20px;
+	max-width: 600px;
+	line-height: 25px;
+}
+
+section.banner div.container a{
+	display: inline-block;
+	color: #fff;
+	background: #FF3414;
+	border-radius: 40px;
+	padding: 20px 50px;
+	text-decoration: none;
+	font-size: 23px;
+}
+
+section.banner div.container a:hover{
+	background: #fff;
+	color: #000;
+	transition: 0.5s;
+}
+
+section.why{
+	width: 100%;
+	padding:100px 0 80px;
+}
+
+section.why div.container{
+	max-width: 1140px;
+	margin: auto;
+	display: flex;
+}
+
+section.why div.container div#img{
+	max-width: 475px;
+	height: auto;
+	box-sizing: border-box;
+}
+
+section.why div.container div div.img{
+	position: relative;
+	max-width: 475px;
+	height: auto;
+	box-sizing: border-box;
+}
+
+section.why div.container div div.img:after{
+	position: absolute;
+	z-index: 1;
+	right: -22px;
+	bottom: -22px;
+	background: #FF3414;
+	content: " ";
+	width: 100%;
+	height: 100%;
+}
+
+section.why div.container div.img img{
+	position: relative;
+	z-index: 5;
+	max-width: 467px;
+	height: auto;
+}
+
+section.why div.container div.about{
+	position: relative;
+	z-index: 5;
+    padding-left: 100px;	
+}
+
+section.why div.container div.about h3{
+	margin: 40px 0px; 
+	font-size: 50px;
+	font-weight: 500;
+
+}
+
+section.why div.container div.about p{
+	color: #727272;
+	line-height: 25px;
+	max-width: 450px;
+}
+
+section.why div.container div.about ul{
+	list-style-type: none;
+	color: #727272;
+	margin-top: 30px;
+}
+
+section.why div.container div.about ul li{
+	margin-bottom: 13px;
+	margin-left: 25px;
+	position: relative;
+}
+
+section.why div.container div.about ul li:after{
+	background: url(../img/svg_icon/check.svg);
+	width: 16px;
+	height: 16px;
+	content: "";
+	position: absolute;
+	left: -25px;
+}
+
+section.why div.container div.about a {
+	display: inline-block;
+	margin-top: 60px;
+	padding: 15px 50px;
+	border:1px solid #FF3414;
+	color: #FF3414;
+	text-decoration: none;
+	font-weight: 600;
+	background: #fff;
+}
+
+section.why div.container div.about a:hover{
+	color: #fff;
+	background: #FF3414;
+	transition: 0.5s;
+}
+
+article.total{
+	width: 100%;
+	padding-bottom: 80px;
+}
+
+article.total div.container{
+	max-width: 1140px;
+	background: url(../img/about/0ffcan.png);
+	margin: auto;
+}
+
+article.total div.container ul{
+	display: flex;
+	list-style-type: none;
+	padding: 50px 0px;
+	max-width: 1140px;
+}
+
+article.total div.container ul li{
+	text-align: center;
+	flex-shrink: ;
+	flex: 3;
+}
+
+article.total div.container ul li h3{
+	color: #FF3414;
+	font-size: 45px;
+	font-weight: 500;
+	margin-bottom: 15px;
+
+}
+
+article.total div.container ul li p{
+	letter-spacing: 1px;
+	color: #596672;
+}
+
+aside.comment{
+	background-image: url(../img/banner/testmonial.png);
+	background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 122px  122px 80px;
+    height: 700px;
+    box-sizing: border-box;
+}
+
+aside.comment div.container div.text{
+	background: #fff;
+	padding: 50px 60px;
+	display: inline-block;
+	max-width: 570px;
+	text-align: center;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+aside.comment div.container div.text ul{
+	list-style-type: none;
+}
+
+aside.comment div.container div.text ul li{
+	margin-bottom: 30px;
+}
+
+aside.comment div.container div.text ul li p{
+	color: #001D38;
+	line-height: 30px;
+	font-size: 20px;
+}
+
+aside.comment div.container div.text ul li h4{
+	line-height: 30px;
+	color: #001D38;
+	font-size: 15px;
+}
+
+aside.comment div.container div.text ul li h5{
+	color: #596672;
+	font-size: 13px;
+}
+
+div.register{
+	background-image: url(../img/banner/Estimate_bg.png);
+	background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    box-sizing: border-box;
+    background-size: cover;
+    height: 613px;
+    z-index: 2;
+    padding: 120px 70px;
+
+}
+
+div.register:after{
+	content: " ";
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #001D38;
+	opacity: 0.9;
+}
+
+div.register div.container{
+	position: relative;
+	z-index: 1;
+	margin: auto;
+}
+
+div.register div.container div.small-container{
+	display:flex;
+}
+
+div.register div.container div.text{
+	flex-grow: 1;
+
+}
+
+div.register div.container div.text ul{
+	list-style-type: none;
+}
+
+div.register div.container div.text ul li h3{
+	color: #fff;
+	font-size: 30px;
+	font-weight: 500;
+
+}
+
+div.register div.container div.text ul li p {
+	color: #C7C7C7;
+	font-size: 16px;
+	line-height: 28px;
+	margin-top: 40px;
+	max-width: 330px;
+}
+
+div.register div.container div.text ul li a{
+	display: inline-block;
+	margin-top: 40px;
+	padding: 12px 30px;
+	border-radius: 30px;
+	background: #FF3414;
+	border: 1px solid #FF3414;
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+div.register div.container div.text ul li a:hover{
+	background: transparent;
+	color: #FF3414;
+	transition: 0.5s;
+}
+
+div.register div.container div.input{
+	flex-grow: 2;
+	color: #fff;
+}
+
+div.register div.container div.input ul{
+	list-style-type: none;
+}
+
+div.register div.container div.input ul li{
+	display: flex;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+div.register div.container div.input ul li input{
+	max-width: 50%;
+	background:transparent;
+	flex:0 0 49.2%;
+	margin-right: 10px;
+	border-radius: 5px;
+    border: 1px solid #667686;
+    font-size: 14px;
+    background: transparent;
+    color: #fff;
+    margin-bottom: 15px;
+    height: 50px;
+    outline: none;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+div.register div.container div.input ul li select{
+	max-width: 50%;
+	background:transparent;
+	flex:0 0 49.2%;
+	margin-right: 10px;
+	border-radius: 5px;
+    border: 1px solid #667686;
+    font-size: 14px;
+    background: transparent;
+    margin-bottom: 15px;
+    height: 50px;
+    outline: none;
+    padding-left: 15px;
+    box-sizing: border-box;
+    color: #667686;
+}
+
+div.register div.container div.input ul li select option{
+	color: #000;
+}
+
+div.register div.container div.input ul li textarea{
+	width: 100%;
+	height: 105px;
+	padding: 18px 15px;
+	border-radius: 5px;
+    border: 1px solid #667686;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+div.register div.container div.input ul li a{
+	display: block;
+	text-align: center;
+	padding: 15px 0px;
+	text-decoration: none;
+	color: #FF3414;
+	border: 1px solid #FF3414;
+	border-radius: 5px;
+	width: 100%;
+	background: transparent;
+	font-size: 14px;
+}
+
+div.register div.container div.input ul li a:hover{
+	background: #FF3414;
+	color: #FFF;
+	transition: 0.5s;
+}
+
+div.direct{
+	width: 100%;
+	background: #F5FBFF;
+	padding: 100px 0;
+}
+
+div.direct div.container{
+	max-width: 1140px;
+	margin: auto;
+}
+
+div.direct div.container ul{
+	display: flex;
+	list-style-type: none;
+}
+
+div.direct div.container ul li.logo{
+	flex-grow: 6;
+}
+
+div.direct div.container ul li.logo div{
+	margin-bottom: 40px;
+}
+
+div.direct div.container ul li.logo ul{
+	list-style-type: none;
+}
+
+div.direct div.container ul li.logo ul li a{
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 50%;
+	margin-right: 15px;
+}
+
+div.direct div.container ul li.logo ul li a.facebook{
+	background: #3B5797;
+	color: #fff;
+	padding: 0px 12px;
+	line-height: 35px;
+}
+
+div.direct div.container ul li.logo ul li a.google{
+	background: #DB4337;
+	color: #fff;
+	padding: 0px 8px;
+	line-height: 35px;
+}
+
+div.direct div.container ul li.logo ul li a.twitter{
+	background:#00ACED;
+	color: #fff;
+	padding: 0px 10px;
+	line-height: 35px;
+}
+
+div.direct div.container ul li.logo ul li a.youtube{
+	background: #BB0000;
+	color: #fff;
+	padding: 0px 8px;
+	line-height: 35px;
+}
+
+div.direct div.container ul li.info{
+	flex-grow: 1;
+}
+
+div.direct div.container ul li.info label{
+	color: #001D38;
+	font-size: 22px;
+	font-weight: 400;
+}
+
+div.direct div.container ul li.info p{
+	line-height: 28px;
+	font-size: 14px;
+	color: #596672;
+	max-width: 200px;
+}
+
+div.direct div.container ul li.info div{
+	color: #596672;
+	line-height: 28px;
+	font-size: 14px;
+}
+
+div.final{
+	width: 100%;
+	padding: 100px 0;
+	background: #fff;
+}
+
+div.final div.container{
+	max-width: 1140px;
+	margin: auto;
+	display: flex;
+}
+
+div.final div.container ul{
+	list-style-type: none;
+	flex-grow: 4;
+}
+
+div.final div.container ul li:nth-child(1){
+	margin-bottom: 50px;
+	color: #001D38;
+	font-size: 18px;
+}
+
+div.final div.container ul li{
+	margin-bottom: 20px;
+}
+
+div.final div.container ul a{
+	text-decoration: none;
+	color: #596672;
+}
+
+div.final div.container ul a:hover{
+	color: #FF3414;
+	transition: 0.5s;
+}
+
+div.final div.container ul.Subscribe{
+	max-width: 400px;
+}
+
+div.final div.container ul.Subscribe li:nth-child(2){
+	max-width: 320px;
+	padding: 7px 0px;
+	border: 1px solid;
+	border-radius: 30px;
+	text-align: center;
+}
+
+div.final div.container ul.Subscribe li input{
+	border: none;
+	font-size: 16px;
+	line-height: inherit;
+	outline: none;
+	margin-left: 5px;
+}
+
+div.final div.container ul.Subscribe li a{
+	padding: 10px 20px;
+	display: inline-block;
+	background:#FF3414;
+	color: #FFF;
+	border-radius: 30px;
+	font-size: 14px; 
+}
+
+div.final div.container ul.Subscribe li p{
+	font-size: 13px;
+    color: #596672;
+    line-height: 26px;
+    max-width: 300px;
+}
+
+div.footer{
+	width: 100%;
+	background: #fff;
+	padding-bottom: 50px;
+}
+
+div.footer div.container{
+	max-width: 1140px;
+	margin: auto;
+	text-align: center;
+	border-top: 1px solid #E8E8E8;
+	padding-top: 50px;
+}
+
+div.footer div.container span{
+	color: #596672;
+	font-size: 15px;
+}
+
+div.footer div.container span a{
+	color: #FF3414;
+	text-decoration: none;
+	font-weight: 550;
+}
